@@ -108,3 +108,29 @@ a {
     width: 100%;
     position: absolute;
 }
+
+/* piani di abbonamento */
+
+.contenitore-piani-abbonamento {
+    width: 55%;
+    margin: 100px auto;
+}
+
+.contenitore-piani-abbonamento h3{
+    font-size: 30px;
+}
+
+.contenitore-piani-abbonamento .radio{
+    display: inline-block;
+    margin: 30px 30px 30px 0;
+}
+
+.row-abbonamento {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col30 {
+    width: 30%;
+    border: 1px solid lightgray;
+}
