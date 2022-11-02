@@ -44,7 +44,7 @@ li img {
     height: 20px;
 }
 
-a {
+.col-header2 a {
     text-decoration: none;
 }
 
@@ -92,7 +92,7 @@ a {
     font-weight: 700;
 }
 
-.col-jumbo2 button {
+.col-jumbo2 button{
     margin: 30px 0;
     padding: 10px;
     border: none;
@@ -133,4 +133,60 @@ a {
 .col30 {
     width: 30%;
     border: 1px solid lightgray;
+}
+
+.thead{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    padding: 5px;
+}
+
+.col30 i{
+    padding: 5px;
+}
+
+.corpo-abbonamento{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.tipo-abbonamento {
+    margin-bottom: 40px;
+}
+
+.tipo-abbonamento h4 {
+    font-size: 20px;
+}
+
+.tipo-abbonamento .durata {
+    color: gray;
+}
+
+.tipo-abbonamento div{
+    display: flex;
+    margin: 15px 0;
+}
+
+.col30 button {
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+}
+
+.acquista-ora{
+    margin: 30px 0;
+}
+
+.fa-check {
+    color: green;
+}
+
+hr {
+    color: lightgray;
+    width: 20%;
+}
+
+.tipo-abbonamento h5 {
+    margin: 30px 0;
 }
