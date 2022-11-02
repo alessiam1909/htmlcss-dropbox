@@ -12,10 +12,12 @@ body {
 
 header{
     position: fixed;
+    height: 50px;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1;
+    background-color: white;
 }
 
 .row-header {
@@ -24,7 +26,6 @@ header{
 }
 
 .col-header1 , .col-header2 {
-    height: 50px;
     display: flex;
     align-items: center;
 }
@@ -58,4 +59,38 @@ a {
 .bg-blue {
     background-color: rgba(0,97,255,255);
     color: white;
+}
+
+/* stilizzazione jumbo */
+
+.contenitore-jumbo {
+    background-color: rgba(180,208,231,255);
+}
+
+.jumbo {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.row-jumbo1 , .row-jumbo2 {
+    display: flex;
+}
+
+.col-jumbo2 {
+    width: 30%;
+}
+
+.col-jumbo3 {
+    width: 70%;
+}
+
+.col-jumbo1 h1{
+    margin-top: 100px;
+    font-size: 60px;
+    font-weight: 2em;
+}
+
+.col-jumbo3 img {
+    width: 100%;
+    object-fit: cover;
 }
