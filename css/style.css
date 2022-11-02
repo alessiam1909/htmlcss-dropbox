@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Stilizzazione header */
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.row-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-header1 , .col-header2 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+}
+
+li img {
+    height: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.login {
+    color: black;
+}
+
+.inizia {
+    padding: 5px 15px;
+}
+
+.bg-blue {
+    background-color: rgba(0,97,255,255);
+    color: white;
+}
