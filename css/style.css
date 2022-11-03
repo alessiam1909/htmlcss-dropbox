@@ -113,7 +113,7 @@ li img {
 
 /* piani di abbonamento */
 
-.contenitore-piani-abbonamento {
+.contenitore-piani-abbonamento, .contenitore-partner {
     width: 55%;
     margin: 100px auto;
 }
@@ -194,3 +194,51 @@ hr {
 .tipo-abbonamento h5 {
     margin: 30px 0;
 }
+
+.thead2 {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding: 5px;
+    margin: 40px 0 0 0;
+}
+
+.thead2 i {
+    padding: 5px;
+}
+
+.row-abbonamento2{
+    display: flex;
+    flex-direction: column;
+}
+
+.col100 {
+    width: 100%;
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col100 button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+}
+
+.col100-sx {
+    width: 75%;
+}
+
+.col100-dx {
+    width: 25%;
+    text-align: center;
+}
+
+.col100-sx, .col100-dx {
+    padding: 20px;
+}
+
+/* creazione sezione partner dropbox */
