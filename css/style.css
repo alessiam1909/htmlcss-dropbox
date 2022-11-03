@@ -376,7 +376,7 @@ div .link{
 
 .bg-azzurro {
     background-color: rgba(180,208,231,255);
-    height: 250px;
+    height: 200px;
 }
 
 .contenitore-55-2 {
@@ -413,4 +413,64 @@ div .link{
     color: rgba(0,97,255,255);
     font-size: 15px;
     padding: 10px;
+}
+
+/* creazione sezione FAQ */
+
+.contenitore-55 h1 {
+    margin-bottom: 40px;
+}
+
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.accordion-wrapper {
+    overflow: hidden;
+    margin:0 auto;
+}
+
+.accordion {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+
+.accordion-label {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 16px 0;
+    cursor: pointer;
+}
+
+.accordion-label::after {
+    content: "\276F";
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.accordion-content {
+    max-height: 0;
+    padding: 0 16px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+input:checked + .accordion-label {
+    background: rgb(228, 227, 227);
+}
+
+input:checked + .accordion-label::after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+input:checked ~ .accordion-content {
+    max-height: 100vh;
+    padding: 16px 0;
 }
