@@ -113,7 +113,8 @@ li img {
 }
 
 .col-jumbo3 img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 730px;
     position: absolute;
     top: 0;
     left: 0;
