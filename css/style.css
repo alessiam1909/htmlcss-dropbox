@@ -426,59 +426,40 @@ div .link{
 /* creazione sezione FAQ */
 
 .contenitore-55 h1 {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid gray;
 }
 
-input {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-}
-
-.accordion-wrapper {
-    overflow: hidden;
-    margin:0 auto;
+.accordion-wrapper input {
+    display: none;
 }
 
 .accordion {
-    width: 100%;
-    overflow: hidden;
-    border-bottom: 1px solid lightgray;
-    border-top: 1px solid lightgray;
-}
-
-.accordion-label {
-    display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    padding: 16px 0;
+    display: block;    
+    padding: 30px 0;
+    border-bottom:1px solid gray;
+    font-weight: 600;
+    margin: 0 0 1px 0;
     cursor: pointer;
+    transition: ease 0.5s;
+  }
+
+.accordion:hover {
+    background: rgb(206, 200, 200);
 }
 
-.accordion-label::after {
-    content: "\276F";
-    width: 16px;
-    height: 16px;
-    text-align: center;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-}
-.accordion-content {
-    max-height: 0;
-    padding: 0 16px;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+.accordion:active .panel{
+    z-index: 1;
 }
 
-input:checked + .accordion-label {
-    background: rgb(228, 227, 227);
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
 }
 
-input:checked + .accordion-label::after {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+.accordion i{
+    float: right;
+    padding: 0 20px;
 }
-input:checked ~ .accordion-content {
-    max-height: 100vh;
-    padding: 16px 0;
-}
+  
