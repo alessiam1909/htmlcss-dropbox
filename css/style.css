@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -78,6 +82,10 @@ li img {
 
 .col-jumbo2 {
     width: 30%;
+}
+
+.col-jumbo2 a{
+    color: black;
 }
 
 .col-jumbo3 {
